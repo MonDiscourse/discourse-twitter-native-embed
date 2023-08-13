@@ -21,6 +21,7 @@ export default {
                         const twitter_blockquoue = document.createElement("blockquote");
                         twitter_blockquoue.setAttribute("style", "display: none");
                         twitter_blockquoue.classList?.add("twitter-tweet");
+                        twitter_blockquoue.setAttribute("data-theme", "dark");
                         const aaa = document.createElement("a");
                         aaa.setAttribute("href", aa.href.replaceAll("https://x.com", "https://twitter.com"));
                         aaa.setAttribute("rel", "no-follow");
