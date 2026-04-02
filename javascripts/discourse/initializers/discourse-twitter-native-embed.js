@@ -20,8 +20,8 @@ export default {
                     for (const aa of el.querySelectorAll(`a.onebox[href^="https://${the_musks_fxxking_url}/"][href*=status]`)) {
                         const twitter_blockquoue = document.createElement("blockquote");
                         twitter_blockquoue.setAttribute("style", "display: none");
-                        twitter_blockquoue.classList?.add("twitter-tweet");
                         twitter_blockquoue.setAttribute("data-theme", "dark");
+                        twitter_blockquoue.classList?.add("twitter-tweet");
                         const aaa = document.createElement("a");
                         aaa.setAttribute("href", aa.href.replaceAll("https://x.com", "https://twitter.com"));
                         aaa.setAttribute("rel", "no-follow");
@@ -32,6 +32,7 @@ export default {
                 for (const aa of el.querySelectorAll("aside.onebox.twitterstatus")) {
                     const twitter_blockquote = document.createElement("blockquote");
                     twitter_blockquote.setAttribute("style", "display: none");
+                    twitter_blockquoue.setAttribute("data-theme", "dark");
                     twitter_blockquote.classList?.add("twitter-tweet");
                     const aaa = document.createElement("a");
                     const href = aa.getAttribute("data-onebox-src").replaceAll("https://x.com", "https://twitter.com")
